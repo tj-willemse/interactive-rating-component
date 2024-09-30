@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="rating-main-box hidden-one">
+      <header class="container">
+        <img
+          class="header-img"
+          src="./public/icon-star.svg"
+          alt="star"
+          width="16"
+          height="17"
+        />
+      </header>
+
+      <section class="container section">
+        <h2 class="hero-title">How did we do?</h2>
+        <p class="hero-paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </section>
+
+      <section class="container section">
+        <div class="button-ratings">
+          <button class="btn-number">1</button>
+          <button class="btn-number">2</button>
+          <button class="btn-number">3</button>
+          <button class="btn-number">4</button>
+          <button class="btn-number">5</button>
+        </div>
+        <div class="button-submit">
+          <button class="btn-bottom">Submit</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div class="thank-you-box" style="display: none">
+      <section class="container">
+        <div class="img-two-box">
+          <img
+            class="image-two"
+            src="./public/illustration-thank-you.svg"
+            alt="thank-you"
+            width="162"
+            height="108"
+          />
+        </div>
+      </section>
+      <section class="container section">
+        <div class="selection-text-box">
+          <p class="selection-text">
+            You selected
+            <!-- Add rating here -->
+            <span id="selected-number">0</span>
+            out of 5
+          </p>
+        </div>
+      </section>
+      <section class="container section">
+        <h2 class="selection-subtitle">Thank you!</h2>
+        <p class="selection-paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

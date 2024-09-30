@@ -1,0 +1,8 @@
+.hero-title {
+  color: var(--clr-white);
+  font-size: var(--size-lg);
+}
+.hero-paragraph {
+  font-family: var(--font-primary);
+  color: var(--clr-lightgray);
+}
